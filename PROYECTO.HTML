@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi proyecto</title>
+    <link rel="stylesheet" type="text/css" href="p.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="LOGO.png" alt="Logo" class="logo">
+            <h1>CARE FOR THE ENVIRONMENT</h1>
+            <img src="macotas.png" alt="Logo" class="logo">
+            
+            
+
+        </div>
+       
+    </header>
+ <hr>
+    <nav id="header">
+        <ul class="nav">
+         <li><a href="inicio1.html">INICIO</a></li>
+            <li><a href="somos.html">QUIENES SOMOS</a>
+                <ul>
+                    <li><a href="somos.html">Plan Estrategico</a></li>
+                    <li><a href="PROYECTO.HTML">proyecto</a></li>
+                  
+                    <li>
+                        
+                </ul>
+            </li>
+            <li><a href="tecnoLogica.html">SOLUCION TECNOLOGICA</a></li>
+            <li><a href="#">EVIDENCIAS</a></li>
+      <ul>
+                    <li><a href="evidencias.html">Fotos</a></li>
+                    <li><a href="4.mp4">Video</a></li>
+                    <li>
+                        
+                </ul>
+
+ </ul>
+
+   
+    </nav>
+
+    <main>
+        <div class="menu1">
+            <button class="menu-button" onclick="showImage('image5')">OBJETIVO GENERAL</button>
+            <button class="menu-button" onclick="showImage('image6')">OBJETIVOS ESPECIFICOS</button>
+            <button class="menu-button" onclick="showImage('image7')">MARCO TEORICO</button>
+            <button class="menu-button" onclick="showImage('image8')">MARCO LEGAL</button>
+            <button class="menu-button" onclick="showImage('image9')">CRONOGRAMA</button>
+  
+  
+        <div class="image-container1">
+            <img id="image5" class="image" src="objetivo.png">
+            <img id="image6" class="image" src="objetivo especifico.png">
+            <img id="image7" class="image" src="MARCO TEORICO .png">
+            <img id="image8" class="image" src="MARCO LEGAL.png">
+            <img id="image9" class="image" src="CRONOGRAMA.PNG">
+        </div>
+<script>
+        function showImage(imageId) {
+            // Ocultar todas las im�genes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script>
+</main>
+
+      <footer>
+        <div class="social-media">
+            <a href="#"><img src="./facebook (1).png" alt="Facebook"></a>
+            <a href="#"><img src="./twitter (1).png" alt="Twitter"></a>
+            <a href="#"><img src="./instagram (1).png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    
+
+  
+</body>
+</html>
